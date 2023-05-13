@@ -11423,7 +11423,8 @@ textarea.form-control {
   z-index:-1;
   min-height: 500px;
   background: url(../imgs/world.jpg) no-repeat center center fixed;
-  background-size: fixed;
+  /* background-size: fixed; */
+  background-size:cover;
   overflow: hidden;
 }
 

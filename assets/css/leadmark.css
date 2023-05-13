@@ -11418,13 +11418,12 @@ textarea.form-control {
 }
 
 .header {
-  position: relative;
   height: 100vh;
   z-index:-1;
   min-height: 500px;
   background: url(../imgs/world.jpg) no-repeat center center fixed;
-  /* background-size: fixed; */
-  background-size:cover;
+  background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
 }
 

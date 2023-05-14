@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>クイズ</title>
+    <script>
+        function checkAnswer() {
+            // 正解の選択肢
+            var correctAnswer = "3";
+
+            // ユーザーの選択した答えを取得
+            var userAnswer = document.querySelector('input[name="answer"]:checked');
+
+            if (userAnswer) {
+                if (userAnswer.value === correctAnswer) {
+                    alert("正解です！");
+                } else {
+                    alert("不正解です！");
+                }
+            } else {
+                alert("回答を選択してください。");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>クイズ</h1>
+
+    <p>次のうち、最も広い河川はどれですか？</p>
+
+    <form>
+        <input type="radio" name="answer" value="1">ナイル川<br>
+        <input type="radio" name="answer" value="2">アマゾン川<br>
+        <input type="radio" name="answer" value="3">ミシシッピ川<br>
+        <input type="radio" name="answer" value="4">長江<br>
+        <br>
+        <input type="button" value="回答する" onclick="checkAnswer()">
+    </form>
+</body>
+
+</html>

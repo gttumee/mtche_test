@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
     <link rel="stylesheet" href="assets/css/leadmark.css">
+     $(function() {
+  var height = $(window).height();
+  var device = navigator.userAgent;
+  if (device.indexOf('iPhone') !== -1 || device.indexOf('iPad') !== -1) {
+    $("body").css({ "background-size": "auto " + height + "px" });
+  }
+});
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
